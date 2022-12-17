@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.upperpart{
+    display: flex;
+    width: 95%;
+    height: 80px;
+    margin: auto;
+    align-items:center;
+    justify-content: flex-end;
+}
+.logo{
+    width: 20%;
+    margin-right: 145px;
+}
+.logo img{
+    width: 100%;
+    padding-top: 9px;
+}
+.upperpart input{
+    width: 20%;
+    height: 35px;
+    padding-left: 11px;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.upperpart a img{
+    margin-right: 25px;
+}
+.bottompart{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+}
+.banner{
+    width: 88.2%;
+    margin: auto;
+}
+.banner img{
+    width: 100%;
+}
+.bottompart li a{
+    color: black;
+    text-decoration: none;
+}
+.bottompart li a:hover{
+    text-decoration: underline rgb(93, 93, 249);
+}
+.middlepart{
+    width: 88.2%;
+    margin: auto;
+}
+.middlepart img{
+    width: 100%;
+}
+.shopbycategory{
+    width: 88.2%;
+    text-align: center;
+    margin: auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    width: 15%;
+}
+.item img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.item>a{
+    color: black;
+}
+.item>a:hover{
+    text-decoration: none;
+}
+
+
+
+
