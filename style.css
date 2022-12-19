@@ -309,6 +309,7 @@ h4 {
     text-align: center;
     color: rgb(90, 90, 90);
     margin-top: 3px;
+    margin-bottom: 30px;
 }
 
 .description {
@@ -452,29 +453,6 @@ h4 {
     color: gray;
 }
 
-.carousel {
-    width: 90%;
-    background: #EEE;
-    margin: auto;
-    margin-bottom: 40px;
-    z-index: -1;
-}
-
-.carousel-cell {
-    width: 28%;
-    height: 200px;
-    margin-right: 10px;
-    background: green;
-    border-radius: 5px;
-}
-
-.carousel-cell:before {
-    display: block;
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
-
 .poster {
     width: 70%;
     margin: auto;
@@ -486,7 +464,8 @@ h4 {
     width: 100%;
 }
 
-.poster h2 {
+.poster h2,
+.shopping {
     margin-top: 50px;
     font-weight: 1;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -526,18 +505,19 @@ h4 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.form {
+
+#form {
     margin-top: 35px;
     text-align: center;
 }
 
-.form h5 {
+#form h5 {
     font-weight: 1;
     font-size: 14px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(51, 51, 51);
     text-align: left;
-    margin-left: 119px;
+    margin-left: 130px;
     margin-bottom: 2px;
 }
 
@@ -564,7 +544,7 @@ h4 {
     text-decoration: 1px underline rgb(107, 107, 107);
 }
 
-.form>a {
+#form>a {
     color: rgb(51, 51, 51);
 }
 
@@ -572,7 +552,7 @@ h4 {
     margin-left: 45px;
 }
 
-.form>a>h6 {
+#form>a>h6 {
     margin-top: 25px;
     font-weight: 1;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -580,14 +560,14 @@ h4 {
     margin-bottom: 20px;
 }
 
-.form a input,
+#form a input,
 .info2 button {
     padding: 8px 30px;
     background-color: rgb(51, 51, 51);
     color: white;
 }
 
-.form a input:hover,
+#form a input:hover,
 .info2 button:hover {
     background-color: rgb(233, 233, 233);
     color: rgb(51, 51, 51);
@@ -646,4 +626,149 @@ h4 {
 .accountinfo h5 {
     margin-left: 127px;
     margin-bottom: 15px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+    border-top: 2px solid rgb(107, 107, 107);
+    padding-top: 50px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+}
+
+#filter {
+    width: 200px;
+}
+
+.filter {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid black;
+    padding: 20px 0px;
+}
+
+.filter h3 {
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 10px;
+}
+
+#container img {
+    width: 100%;
+}
+
+.shopping {
+    margin-left: 155px;
+}
+
+#container>div {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+#container>div>button {
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 8px 0px;
+    font-size: x-small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+}
+#productcont{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.bag{
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid;
+    padding-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 20px;
+}
+.shipping{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+.shipping>div{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.shipping>div>h3,#totalitem{
+    margin: 0px 8px;
+}
+.shipping>div:nth-child(1){
+    padding-top: 20px;
+    padding-right: 20px;
+    justify-content: flex-end;
+    border-right: 1px solid gray;
+}
+.shipping>div:nth-child(2){
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-left: 1px solid gray;
+}
+.choice{
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+.asap{
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+#list>div{
+    display: flex;
+    border-right: 2px solid gray;
+    justify-content: space-between;
+    padding: 15px 100px;
+}
+#list>div>div:nth-child(1){
+    width: 25%;
+}
+#list>div>div{
+    text-align: center;
+}
+#list img{
+    width: 100%;
+}
+#list{
+    width: 60%;
+}
+#bill{
+    width: 40%;
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#bill p{
+    margin-top: 20px;
+}
+#bill>div{
+    display: flex;
+    border-top: 2px solid black;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 70%;
+}
+#bill>div:nth-child(5){
+    border-top: 2px dotted black;
+}
+#bill button{
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px 0px;
 }

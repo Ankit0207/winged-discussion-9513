@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account | Bath & Body Works</title>
+    <title>Cart page | Bath & Body Works</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <nav>
         <div class="upperpart">
             <div class="logo">
-                <a href="#"><img
+                <a href="./index.html"><img
                         src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw6cad6a5a/images/no_drop_logo-01.png"
                         alt=""></a>
             </div>
@@ -41,7 +39,7 @@
                 </div>
             </div>
             <div class="icon">
-                <a href="#"><img
+                <a href="./cart.html"><img
                         src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw04072d5a/images/AddToBag.png"
                         alt=""></a>
             </div>
@@ -502,38 +500,37 @@
             <li><a href="#">TOP OFFERS</a></li>
         </ul>
     </nav>
-    <div class="poster">
-        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6f07f823/images/banners/create-account_d.png?yocs=s_"
-            alt="">
-        <h2>Create an Account</h2>
+    <h2 class="shopping">Shopping Bag</h2>
+   
+    <div class="bag">
+        <p>ITEMS IN SHOPPING BAG</p>
+        <div class="asap">
+            <h4>Need it ASAP? Choose Pick Up In Store, and we'll typically have it ready for pickup within 4 hours.</h4>
+        </div>
+        <div class="choice">
+            <h3>YOUR SHIPPING AND PICKUP CHOICES</h3>
+        </div>
+        <div class="shipping">
+            <div>
+                <i class="fa-solid fa-truck"></i>
+                <span id="totalitem"></span>
+                <p>Item added for</p>
+                <h3>Shipping</h3>
+            </div>
+            <div>
+                <div>
+                    <h4>NEW! PICK UP IN STORE</h4>
+                    <p>Get it ASAP! It's easy, fast & free.</p>
+                    <a href="#">
+                        <p>Set Store</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="accountinfo">
-        <form id="form" action="">
-            <h5>*First Name</h5>
-            <input type="text" name="" id="name">
-            <h5>*Last Name</h5>
-            <input type="text" name="" id="lastname">
-            <h5>*Email</h5>
-            <input type="email" name="" id="emailaddress1">
-            <h5>*Confirm Email</h5>
-            <input type="email" name="" id="emailaddress2">
-            <h5>*ZIP/Postal Code</h5>
-            <input type="text" name="" id="zipcode">
-            <h5>*Phone</h5>
-            <input type="text" name="" id="phone">
-            <p>We'll use this to look up your Rewards account in stores.</p>
-            <h5>*Password</h5>
-            <input type="password" name="" id="password">
-            <a href="#">
-                <h6>Privacy Policy</h6>
-            </a>
-            <a href="./signin.html"><input type="button" value="CREATE ACCOUNT" id="btn"></a>
-            <!-- <a href="./signin.html"><input type="submit" value="CREATE ACCOUNT"></a> -->
-        </form>
-    </div>
-    <div class="que">
-        <p>QUESTIONS?</p>
-        <P>We’re here for you! Call us at 1-800-756-5005.</P>
+    <div id="productcont">
+        <div id="list"></div>
+        <div id="bill"></div>
     </div>
     <div class="footer">
         <div class="box">
@@ -687,6 +684,7 @@
         </div>
         <p>© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
     </div>
+    
 </body>
-<script src="./script/signup.js"></script>
+<script src="./script/cart.js"></script>
 </html>
